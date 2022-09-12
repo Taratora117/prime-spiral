@@ -1,3 +1,12 @@
+/**
+ * Calculates all the coordinates for a square spiral.
+ * Returns a key value pair where the key is the current number
+ * and the value are its x and y coordinates.
+ * 
+ * @param {number} size width/height in px
+ * @param {number} n width/height of the spiral
+ * @returns {{number: [number, number]}} {currentNumber: {x, y}}
+ */
 function spiral(size, n) {
   const multiplier = size / n;
   let direction = 0; 
