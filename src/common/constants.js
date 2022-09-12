@@ -1,5 +1,5 @@
 const SIZE = 800;
-const FPS = 20000;
+const FPS = 60; // max 60
 
 export {
   SIZE,
