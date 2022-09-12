@@ -18,11 +18,8 @@ let n = 1;
 
 function animate() {
 
-  if (n <= 10000) {
-    if (prime(n)) {
-      ctx.fillRect(matrix[n][0], matrix[n][1], SIZE / 100, SIZE / 100)
-    };
-    n++;
+  for (let n = 1; n <= 10000; n++) {
+    if (prime(n)) ctx.fillRect(matrix[n][0], matrix[n][1], SIZE / 100, SIZE / 100);
   }
 
   setTimeout(() => {
